@@ -1,0 +1,22 @@
+{
+  "name": "microverse-606-testing-jest",
+  "version": "1.0.0",
+  "description": "javascript test practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thsvr/Microverse-606-testing-jest.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "uryelah, vrths",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thsvr/Microverse-606-testing-jest/issues"
+  },
+  "homepage": "https://github.com/thsvr/Microverse-606-testing-jest#readme"
+}
