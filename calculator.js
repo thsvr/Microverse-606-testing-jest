@@ -15,7 +15,9 @@ const calculator = (() => {
       args.slice(1).forEach((n) => total /= n)
       return total;
     },
-    multiply: () => {},
+    multiply: (...args) => {
+      return args.reduce((cr, acc) => acc *= cr, 1);
+    },
   };
 })();
 

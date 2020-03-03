@@ -76,11 +76,35 @@ describe('Calculator division method', () => {
   it('returns Negative Infinity if dividing negative number by 0', () => {
     expect(calculator.divide(-100, 0)).toBe(-Infinity);
   });
-  
-
 });
 
+describe('Calculator multiplication method', () => {
+  it('exists', () => {
+    expect(calculator.multiply).toBeDefined();
+  });
 
-it('has a multiplication method', () => {
-  expect(calculator.multiply).toBeDefined();
+  it('returns a number', () => {
+    expect(typeof calculator.multiply(10, 2)).toBe('number');
+  });
+
+  it('return the multiplication of two numbers (1)', () => {
+    expect(calculator.multiply(10, 3)).toBe(30);
+  });
+
+  it('return the multiplication of two (2)', () => {
+    expect(calculator.multiply(2, 3)).toBe(6);
+  });
+
+  it('return the multiplication of two or more numbers', () => {
+    expect(calculator.multiply(2, 3, 2)).toBe(12);
+  });
+
+  it('return positive number when multipling a pair amount of negative numbers', () => {
+    expect(calculator.multiply(-1, -1, -1, -1, 1)).toBeGreaterThan(0);
+  });
+
+  it('return negative number when multipling an odd amount of negative numbers', () => {
+    expect(calculator.multiply(-1, -1, -1, 1)).toBeLessThan(0);
+  });
+
 });
