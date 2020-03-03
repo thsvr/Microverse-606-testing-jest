@@ -9,7 +9,12 @@ const calculator = (() => {
       args.slice(1).forEach((n) => total -= n);
       return total
     },
-    divide: () => {},
+    divide: (...args) => {
+      let total = args[0];
+
+      args.slice(1).forEach((n) => total /= n)
+      return total;
+    },
     multiply: () => {},
   };
 })();
