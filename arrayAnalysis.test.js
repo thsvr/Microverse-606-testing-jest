@@ -60,3 +60,11 @@ it('the length value is a number', () => {
   expect(typeof arrayAnalysis([1,2,3,4]).length).toBe('number');
 });
 
+it ('return the length of given array(1)' , () => {
+  expect(arrayAnalysis([10, 20]).length).toBe(2)
+});
+
+it ('return the length of given array(2)' , () => {
+  expect(arrayAnalysis([1,2,3,4]).length).toBe(4)
+});
+
