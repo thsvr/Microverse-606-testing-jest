@@ -1,3 +1,4 @@
+/* eslint-disable */
 const calculator = require('./calculator');
 
 it('is an object', () => {
@@ -38,7 +39,7 @@ describe('Calculator substraction method', () => {
   it('returns the substraction of two parameters(1)', () => {
     expect(calculator.substract(2, 1)).toBe(1);
   });
-  
+
   it('returns the substraction of two parameters(2)', () => {
     expect(calculator.substract(5, 10)).toBe(-5);
   });
@@ -106,5 +107,4 @@ describe('Calculator multiplication method', () => {
   it('return negative number when multipling an odd amount of negative numbers', () => {
     expect(calculator.multiply(-1, -1, -1, 1)).toBeLessThan(0);
   });
-
 });

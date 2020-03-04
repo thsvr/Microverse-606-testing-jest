@@ -1,3 +1,4 @@
+/* eslint-disable */
 const reverseString = require('./reverseString');
 
 it('returns a string', () => {

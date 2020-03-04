@@ -1,3 +1,4 @@
+/* eslint-disable */
 const caesarCipher = require('./caesarCipher');
 
 const message = 'secret message';
@@ -33,15 +34,15 @@ it('returns an encrypted string including spaces', () => {
 });
 
 it('returns an encrypted string including pontuation(1)', () => {
-  expect(caesarCipher(message + '!', 1)).toBe('tfdsfu nfttbhf!');
+  expect(caesarCipher(`${message}!`, 1)).toBe('tfdsfu nfttbhf!');
 });
 
 it('returns an encrypted string including pontuation(2)', () => {
-  expect(caesarCipher(message + '.', 1)).toBe('tfdsfu nfttbhf.');
+  expect(caesarCipher(`${message}.`, 1)).toBe('tfdsfu nfttbhf.');
 });
 
 it('returns an encrypted string including pontuation(3)', () => {
-  expect(caesarCipher(message + '?', 1)).toBe('tfdsfu nfttbhf?');
+  expect(caesarCipher(`${message}?`, 1)).toBe('tfdsfu nfttbhf?');
 });
 
 it('returns an encrypted string including pontuation(4)', () => {

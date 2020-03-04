@@ -1,5 +1,5 @@
+/* eslint-disable */
 const capitalize = require('./capitalize');
-
 
 it('returns a string', () => {
   expect(typeof capitalize('thais')).toBe('string');
