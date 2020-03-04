@@ -44,6 +44,14 @@ it('the max value is a number', () => {
   expect(typeof arrayAnalysis([1,2,3,4]).max).toBe('number');
 });
 
+it ('return the maximum value of given array(1)' , () => {
+  expect(arrayAnalysis([10, 20]).max).toBe(20)
+});
+
+it ('return the maximum value of given array(2)' , () => {
+  expect(arrayAnalysis([1,2,3,4]).max).toBe(4)
+});
+
 it('the returned object has a length property', () => {
   expect(arrayAnalysis([1,2,3,4]).length).toBeDefined();
 });
