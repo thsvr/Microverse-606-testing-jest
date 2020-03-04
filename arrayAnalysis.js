@@ -1,9 +1,10 @@
 const arrayAnalysis = (numbers) => {
-  const average = numbers.reduce((acc, cr) => acc += cr)/numbers.length
+  const average = numbers.reduce((acc, cr) => acc += cr)/numbers.length;
+  const min = Math.min(...numbers);
 
   return {
     average: average,
-    min: 1,
+    min: min,
     max: 2,
     length: 3
   }

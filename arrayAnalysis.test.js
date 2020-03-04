@@ -12,8 +12,12 @@ it('the average value is a number', () => {
   expect(typeof arrayAnalysis([1,2,3,4]).average).toBe('number');
 });
 
-it ('return the average of given parameter' , () => {
-  expect(arrayAnalysis([1,2,3,4])).toBe(2.5)
+it ('return the average of given parameter(1)' , () => {
+  expect(arrayAnalysis([1,2,3,4]).average).toBe(2.5)
+});
+
+it ('return the average of given parameter(2)' , () => {
+  expect(arrayAnalysis([10, 20]).average).toBe(15)
 });
 
 it('the returned object has a min property', () => {
@@ -22,6 +26,14 @@ it('the returned object has a min property', () => {
 
 it('the min value is a number', () => {
   expect(typeof arrayAnalysis([1,2,3,4]).min).toBe('number');
+});
+
+it ('return the minimum value of given array(1)' , () => {
+  expect(arrayAnalysis([10, 20]).min).toBe(10)
+});
+
+it ('return the minimum value of given array(2)' , () => {
+  expect(arrayAnalysis([1,2,3,4]).min).toBe(1)
 });
 
 it('the returned object has a max property', () => {
