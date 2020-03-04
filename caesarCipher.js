@@ -137,7 +137,7 @@ const caesarCipher = (message, key) => {
 
   const upperCases = [];
 
-  const numbersMapping = (arr) => arr.split('').map((c, i) => {
+  const numbersMapping = arr => arr.split('').map((c, i) => {
     const index = alphabetArr.indexOf(c.toUpperCase());
     let newIndex = index + key;
 
@@ -155,7 +155,7 @@ const caesarCipher = (message, key) => {
     return newIndex;
   });
 
-  const lettersMapping = (arr) => arr.map((n, i) => {
+  const lettersMapping = arr => arr.map((n, i) => {
     if (alphabethObj[n] && n === 42) {
       const pontuation = alphabethObj[42].shift();
       return pontuation;
