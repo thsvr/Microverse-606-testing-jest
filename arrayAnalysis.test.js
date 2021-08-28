@@ -1,7 +1,7 @@
 /* eslint-disable */
 const arrayAnalysis = require('./arrayAnalysis');
 
-it('returns an object', () => {
+it('check if the type of arrayAnalysis is an object', () => {
   expect(typeof arrayAnalysis([1, 2, 3, 4])).toBe('object');
 });
 
